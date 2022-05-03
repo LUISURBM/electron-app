@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/app/material-shared/material-shared.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1651552608999,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651552685994,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n import { NgModule } from \"@angular/core\";\n \n const MODULES = [\n   MatToolbarModule,\n+  MatMenuModule,\n   MatButtonModule\n ];\n @NgModule({\n   imports: MODULES,\n"
+                }
+            ],
+            "date": 1651552608999,
+            "name": "Commit-0",
+            "content": "import { MatToolbarModule } from \"@angular/material/toolbar\";\nimport { MatMenuModule } from \"@angular/material/menu\";\nimport { MatButtonModule } from \"@angular/material/button\";\nimport { NgModule } from \"@angular/core\";\n\nconst MODULES = [\n  MatToolbarModule,\n  MatButtonModule\n];\n@NgModule({\n  imports: MODULES,\n  exports: MODULES\n})\nexport class MaterialSharedModule {}\n"
+        }
+    ]
+}

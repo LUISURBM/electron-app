@@ -1,0 +1,58 @@
+{
+    "sourceFile": "main.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1651551572332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651575573173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n \r\n //This function creates the window and its properties.\r\n createWindow = () => {\r\n     appWin = new BrowserWindow({\r\n-        width: 800,\r\n+        width: 1100,\r\n         height: 600,\r\n         title: \"Angular and Electron\",\r\n         resizable: false,\r\n         webPreferences: {\r\n@@ -41,5 +41,8 @@\n });\r\n \r\n /* ipcMain is listening the \"message\" channel, and when the message arrives,\r\n   it replies with \"pong\" */\r\n-ipcMain.on(\"message\", (event) => event.reply(\"reply\", \"pong\"));\r\n+ipcMain.on(\"message\", (event) => {\r\n+  console.log('ipc message');\r\n+  event.reply(\"reply\", \"pong\");\r\n+});\r\n"
+                },
+                {
+                    "date": 1651576064978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,15 +14,15 @@\n     appWin = new BrowserWindow({\r\n         width: 1100,\r\n         height: 600,\r\n         title: \"Angular and Electron\",\r\n-        resizable: false,\r\n         webPreferences: {\r\n             nodeIntegration: true\r\n         }\r\n     });\r\n \r\n-    appWin.loadURL(`file://${__dirname}/dist/index.html`);\r\n+    // appWin.loadURL(`file://${__dirname}/dist/index.html`);\r\n+    appWin.loadFile('index.html')\r\n \r\n     appWin.setMenu(null);\r\n \r\n     appWin.webContents.openDevTools();\r\n"
+                },
+                {
+                    "date": 1651576151342,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,9 @@\n             nodeIntegration: true\r\n         }\r\n     });\r\n \r\n-    // appWin.loadURL(`file://${__dirname}/dist/index.html`);\r\n-    appWin.loadFile('index.html')\r\n+    appWin.loadURL(`file://${__dirname}/dist/index.html`);\r\n \r\n     appWin.setMenu(null);\r\n \r\n     appWin.webContents.openDevTools();\r\n"
+                },
+                {
+                    "date": 1651576750167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,10 @@\n         width: 1100,\r\n         height: 600,\r\n         title: \"Angular and Electron\",\r\n         webPreferences: {\r\n-            nodeIntegration: true\r\n+            nodeIntegration: true,\r\n+            webSecurity: false\r\n         }\r\n     });\r\n \r\n     appWin.loadURL(`file://${__dirname}/dist/index.html`);\r\n"
+                },
+                {
+                    "date": 1651577168194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,9 +20,10 @@\n             webSecurity: false\r\n         }\r\n     });\r\n \r\n-    appWin.loadURL(`file://${__dirname}/dist/index.html`);\r\n+    // appWin.loadURL(`file://${__dirname}/dist/index.html`);\r\n+    appWin.loadFile('index.html')\r\n \r\n     appWin.setMenu(null);\r\n \r\n     appWin.webContents.openDevTools();\r\n"
+                },
+                {
+                    "date": 1651577232779,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,10 @@\n             webSecurity: false\r\n         }\r\n     });\r\n \r\n-    // appWin.loadURL(`file://${__dirname}/dist/index.html`);\r\n-    appWin.loadFile('index.html')\r\n+    appWin.loadURL(`file://${__dirname}/dist/index.html`);\r\n+    // appWin.loadFile('index.html')\r\n \r\n     appWin.setMenu(null);\r\n \r\n     appWin.webContents.openDevTools();\r\n"
+                },
+                {
+                    "date": 1651577256377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,10 @@\n             webSecurity: false\r\n         }\r\n     });\r\n \r\n-    appWin.loadURL(`file://${__dirname}/dist/index.html`);\r\n-    // appWin.loadFile('index.html')\r\n+    // appWin.loadURL(`file://${__dirname}/dist/index.html`);\r\n+    appWin.loadFile('index.html')\r\n \r\n     appWin.setMenu(null);\r\n \r\n     appWin.webContents.openDevTools();\r\n"
+                },
+                {
+                    "date": 1651577339570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n         }\r\n     });\r\n \r\n     // appWin.loadURL(`file://${__dirname}/dist/index.html`);\r\n-    appWin.loadFile('index.html')\r\n+    appWin.loadFile('./src/index.html')\r\n \r\n     appWin.setMenu(null);\r\n \r\n     appWin.webContents.openDevTools();\r\n"
+                },
+                {
+                    "date": 1651577383851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,10 @@\n             webSecurity: false\r\n         }\r\n     });\r\n \r\n-    // appWin.loadURL(`file://${__dirname}/dist/index.html`);\r\n-    appWin.loadFile('./src/index.html')\r\n+    appWin.loadURL(`file://${__dirname}/dist/index.html`);\r\n+    // appWin.loadFile('./src/index.html')\r\n \r\n     appWin.setMenu(null);\r\n \r\n     appWin.webContents.openDevTools();\r\n"
+                },
+                {
+                    "date": 1651580785725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,10 +15,10 @@\n         width: 1100,\r\n         height: 600,\r\n         title: \"Angular and Electron\",\r\n         webPreferences: {\r\n-            nodeIntegration: true,\r\n-            webSecurity: false\r\n+          contextIsolation: false,\r\n+          nodeIntegration: true\r\n         }\r\n     });\r\n \r\n     appWin.loadURL(`file://${__dirname}/dist/index.html`);\r\n"
+                }
+            ],
+            "date": 1651551572332,
+            "name": "Commit-0",
+            "content": "const { app, ipcMain, BrowserWindow } = require(\"electron\");\r\nconst Store = require(\"electron-store\");\r\n\r\nlet appWin;\r\nconst store = new Store();\r\n\r\n//If the record does not exist, it is created with a default value of 0.\r\nif (!store.get(\"clicks\")) {\r\n    store.set(\"clicks\", 0);\r\n}\r\n\r\n//This function creates the window and its properties.\r\ncreateWindow = () => {\r\n    appWin = new BrowserWindow({\r\n        width: 800,\r\n        height: 600,\r\n        title: \"Angular and Electron\",\r\n        resizable: false,\r\n        webPreferences: {\r\n            nodeIntegration: true\r\n        }\r\n    });\r\n\r\n    appWin.loadURL(`file://${__dirname}/dist/index.html`);\r\n\r\n    appWin.setMenu(null);\r\n\r\n    appWin.webContents.openDevTools();\r\n\r\n    appWin.on(\"closed\", () => {\r\n        appWin = null;\r\n    });\r\n}\r\n\r\napp.on(\"ready\", createWindow);\r\n\r\napp.on(\"window-all-closed\", () => {\r\n    if (process.platform !== \"darwin\") {\r\n      app.quit();\r\n    }\r\n});\r\n\r\n/* ipcMain is listening the \"message\" channel, and when the message arrives,\r\n  it replies with \"pong\" */\r\nipcMain.on(\"message\", (event) => event.reply(\"reply\", \"pong\"));\r\n"
+        }
+    ]
+}

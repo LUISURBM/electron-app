@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/main.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1651538915731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1651538915731,
+            "name": "Commit-0",
+            "content": "const { app, BrowserWindow } = require(\"electron\");\r\n\r\nlet appWin;\r\n\r\ncreateWindow = () => {\r\n    appWin = new BrowserWindow({\r\n        width: 800,\r\n        height: 600,\r\n        title: \"Angular and Electron\",\r\n        resizable: false,\r\n        webPreferences: {\r\n            contextIsolation: false,\r\n            nodeIntegration: true\r\n        }\r\n    });\r\n\r\n    appWin.loadURL(`file://${__dirname}/dist/index.html`);\r\n\r\n    appWin.setMenu(null);\r\n\r\n    appWin.webContents.openDevTools();\r\n\r\n    appWin.on(\"closed\", () => {\r\n        appWin = null;\r\n    });\r\n}\r\n\r\napp.on(\"ready\", createWindow);\r\n\r\napp.on(\"window-all-closed\", () => {\r\n    if (process.platform !== \"darwin\") {\r\n      app.quit();\r\n    }\r\n});\r\n"
+        }
+    ]
+}

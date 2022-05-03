@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/services/ipc.service.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1651551954060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1651551954060,
+            "name": "Commit-0",
+            "content": "import { Injectable } from \"@angular/core\";\nimport { IpcRenderer} from \"electron\";\n\n@Injectable({\n  providedIn: \"root\"\n})\nexport class IpcService {\n  private ipc?: IpcRenderer;\n  constructor() {\n    /*If window.require is available, it means that electron is running,\n      then ipc will be loaded. */\n    if (window.require) {\n      try {\n        this.ipc = window.require(\"electron\").ipcRenderer;\n      } catch (e) {\n        throw e;\n      }\n    } else {\n      console.warn(\"Electron IPC was not loaded\");\n    }\n  }\n\n  public on(channel: string, listener: any): void {\n    if (!this.ipc) {\n      return;\n    }\n    this.ipc.on(channel, listener);\n  }\n\n  public once(channel: string, listener: any): void {\n    if (!this.ipc) {\n      return;\n    }\n    this.ipc.once(channel, listener);\n  }\n\n  public send(channel: string, ...args: any[]): void {\n    if (!this.ipc) {\n      return;\n    }\n    this.ipc.send(channel, ...args);\n  }\n\n  public removeAllListeners(channel: string): void {\n    if (!this.ipc) {\n      return;\n    }\n    this.ipc.removeAllListeners(channel);\n  }\n}\n"
+        }
+    ]
+}

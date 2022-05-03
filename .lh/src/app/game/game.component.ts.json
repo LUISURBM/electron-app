@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/game/game.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1651552055528,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1651552055528,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit } from '@angular/core';\nimport { ElectronStoreService } from 'src/app/services/electron-store.service';\n\n@Component({\n  selector: 'app-game',\n  templateUrl: './game.component.html',\n  styleUrls: ['./game.component.scss']\n})\nexport class GameComponent implements OnInit {\n  clicks: number = 0;\n  saved: boolean = true;\n  constructor(private electronStoreService: ElectronStoreService) { }\n\n  ngOnInit(): void {\n    this.clicks = this.electronStoreService.get(\"clicks\");\n  }\n\n  addClicks = (): void => {\n    this.clicks++;\n    this.saved = false;\n  }\n\n  save = (): void => {\n    this.electronStoreService.set(\"clicks\", this.clicks);\n    this.saved = true;\n  }\n}\n"
+        }
+    ]
+}

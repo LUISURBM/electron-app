@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/app/services/electron-store.service.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1651553387182,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651553467512,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,13 +20,13 @@\n    }\n \n    //This function returns the value of the key stored locally with electron-store.\n    get = (key: string): any => {\n-    return this.store.get(key);\n+    return this.store?.get(key);\n    }\n \n    /* And this other function sets the value of the key we want to store.\n       (If the key already exists, the value will be replaced) */\n    set = (key: string, value: any): void => {\n-     this.store.set(key, value);\n+     this.store?.set(key, value);\n    }\n }\n"
+                }
+            ],
+            "date": 1651553387182,
+            "name": "Commit-0",
+            "content": "import { Injectable } from '@angular/core';\nimport * as ElectronStore from 'electron-store';\n\n@Injectable({\n  providedIn: 'root'\n})\nexport class ElectronStoreService {\n  private store?: ElectronStore;\n  constructor() {\n    if (window.require) {\n      try {\n        const storeClass = window.require(\"electron-store\");\n        this.store = new storeClass();\n      } catch (e) {\n        throw e;\n      }\n    } else {\n      console.warn(\"electron-store was not loaded\");\n    }\n   }\n\n   //This function returns the value of the key stored locally with electron-store.\n   get = (key: string): any => {\n    return this.store.get(key);\n   }\n\n   /* And this other function sets the value of the key we want to store.\n      (If the key already exists, the value will be replaced) */\n   set = (key: string, value: any): void => {\n     this.store.set(key, value);\n   }\n}\n"
+        }
+    ]
+}

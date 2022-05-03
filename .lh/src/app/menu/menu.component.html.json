@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/menu/menu.component.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1651552129606,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1651552129606,
+            "name": "Commit-0",
+            "content": "<mat-toolbar class=\"menu-toolbar\">\n  <button\n    routerLink=\"/home\"\n    mat-ripple\n    matRippleColor=\"white\"\n    class=\"menu-button\"\n    routerLinkActive=\"active\"\n    mat-stroked-button\n  >\n    Home\n  </button>\n  <button\n    mat-ripple\n    matRippleColor=\"white\"\n    class=\"menu-button\"\n    mat-stroked-button\n    routerLinkActive=\"active\"\n    routerLink=\"/game\"\n  >\n    Game\n  </button>\n</mat-toolbar>\n"
+        }
+    ]
+}

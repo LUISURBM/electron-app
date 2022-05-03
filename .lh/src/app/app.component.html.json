@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/app/app.component.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1651554823633,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651554851632,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,2 @@\n-<div class=\"test-container\">\n-  <button (click)=\"ping()\" class=\"ping\">PING</button>\n-  <div *ngIf=\"pong\" class=\"pong\">PONG!</div>\n-</div>\n+<app-menu></app-menu>\n+<router-outlet></router-outlet>\n"
+                }
+            ],
+            "date": 1651554823633,
+            "name": "Commit-0",
+            "content": "<div class=\"test-container\">\n  <button (click)=\"ping()\" class=\"ping\">PING</button>\n  <div *ngIf=\"pong\" class=\"pong\">PONG!</div>\n</div>\n"
+        }
+    ]
+}

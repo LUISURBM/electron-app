@@ -1,0 +1,58 @@
+{
+    "sourceFile": "src/index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 10,
+            "patches": [
+                {
+                    "date": 1651547178907,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651576302607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,13 @@\n   <title>AngularElectron</title>\n   <base href=\"./\">\n   <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n   <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">\n+  <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\n+  <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap\" rel=\"stylesheet\">\n+  <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\n+  <meta http-equiv=\"Content-Security-Policy\" content=\"script-src 'self';\">\n </head>\n-<body>\n+<body class=\"mat-typography\">\n   <app-root></app-root>\n </body>\n </html>\n"
+                },
+                {
+                    "date": 1651576428167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n   <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">\n   <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\n   <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap\" rel=\"stylesheet\">\n   <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\n-  <meta http-equiv=\"Content-Security-Policy\" content=\"script-src 'self';\">\n </head>\n <body class=\"mat-typography\">\n   <app-root></app-root>\n </body>\n"
+                },
+                {
+                    "date": 1651576881053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,10 @@\n   <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">\n   <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\n   <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap\" rel=\"stylesheet\">\n   <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\n+  <meta http-equiv=\"Content-Security-Policy\" content=\"script-src 'self';\">\n+  <script src=\"index.js\"></script>\n </head>\n <body class=\"mat-typography\">\n   <app-root></app-root>\n </body>\n"
+                },
+                {
+                    "date": 1651576928241,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n   <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\n   <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap\" rel=\"stylesheet\">\n   <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\n   <meta http-equiv=\"Content-Security-Policy\" content=\"script-src 'self';\">\n-  <script src=\"index.js\"></script>\n+  <script src=\"/index.js\"></script>\n </head>\n <body class=\"mat-typography\">\n   <app-root></app-root>\n </body>\n"
+                },
+                {
+                    "date": 1651576985933,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,9 @@\n   <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">\n   <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\n   <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap\" rel=\"stylesheet\">\n   <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\n-  <meta http-equiv=\"Content-Security-Policy\" content=\"script-src 'self';\">\n-  <script src=\"/index.js\"></script>\n+  <meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'none'\">\n </head>\n <body class=\"mat-typography\">\n   <app-root></app-root>\n </body>\n"
+                },
+                {
+                    "date": 1651577082387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">\n   <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\n   <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap\" rel=\"stylesheet\">\n   <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\n-  <meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'none'\">\n+  <meta http-equiv=\"Content-Security-Policy\" content=\"script-src-elem\">\n </head>\n <body class=\"mat-typography\">\n   <app-root></app-root>\n </body>\n"
+                },
+                {
+                    "date": 1651577249806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">\n   <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\n   <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap\" rel=\"stylesheet\">\n   <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\n-  <meta http-equiv=\"Content-Security-Policy\" content=\"script-src-elem\">\n+\n </head>\n <body class=\"mat-typography\">\n   <app-root></app-root>\n </body>\n"
+                },
+                {
+                    "date": 1651580599825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n   <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">\n   <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\n   <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap\" rel=\"stylesheet\">\n   <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\n+  <meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'src'\">\n \n </head>\n <body class=\"mat-typography\">\n   <app-root></app-root>\n"
+                },
+                {
+                    "date": 1651580657276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n   <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">\n   <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\n   <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap\" rel=\"stylesheet\">\n   <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\n-  <meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'src'\">\n+  <meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'none'\">\n \n </head>\n <body class=\"mat-typography\">\n   <app-root></app-root>\n"
+                },
+                {
+                    "date": 1651580769357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,8 @@\n   <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">\n   <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\">\n   <link href=\"https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap\" rel=\"stylesheet\">\n   <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">\n-  <meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'none'\">\n \n </head>\n <body class=\"mat-typography\">\n   <app-root></app-root>\n"
+                }
+            ],
+            "date": 1651547178907,
+            "name": "Commit-0",
+            "content": "<!doctype html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <title>AngularElectron</title>\n  <base href=\"./\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">\n</head>\n<body>\n  <app-root></app-root>\n</body>\n</html>\n"
+        }
+    ]
+}

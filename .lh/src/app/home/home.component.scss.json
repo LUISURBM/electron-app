@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/home/home.component.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1651551836475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1651551836475,
+            "name": "Commit-0",
+            "content": ".test-container {\r\n  display: flex;\r\n  flex-direction: column;\r\n  justify-content: center;\r\n  align-items: center;\r\n  text-align: center;\r\n  min-height: 100vh;\r\n}\r\n\r\n.ping {\r\n  border: none;\r\n  background: linear-gradient(5deg, black, #383838);\r\n  font-size: 3vw;\r\n  letter-spacing: 7px;\r\n  width: 20%;\r\n  padding: 2%;\r\n  border-radius: 5px;\r\n  outline: none;\r\n  color: white;\r\n}\r\n\r\n.pong {\r\n  border: none;\r\n  font-weight: bold;\r\n  text-shadow: 0px 0px 6px black;\r\n  position: absolute;\r\n  font-size: 3vw;\r\n  letter-spacing: 7px;\r\n  bottom: 35%;\r\n  width: 20%;\r\n  padding: 2%;\r\n  border-radius: 5px;\r\n  outline: none;\r\n  color: white;\r\n}\r\n\r\n.ping:hover {\r\n  cursor: pointer;\r\n  background: linear-gradient(5deg, rgb(15, 15, 15), #4b4b4b);\r\n}\r\n"
+        }
+    ]
+}

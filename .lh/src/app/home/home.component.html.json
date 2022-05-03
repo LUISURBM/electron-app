@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/home/home.component.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1651551823571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1651551823571,
+            "name": "Commit-0",
+            "content": "<div class=\"test-container\">\n  <button (click)=\"ping()\" class=\"ping\">PING</button>\n  <div *ngIf=\"pong\" class=\"pong\">PONG!</div>\n</div>\n"
+        }
+    ]
+}

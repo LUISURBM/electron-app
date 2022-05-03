@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/app/menu/menu.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1651552116908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1651552124306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,15 +1,22 @@\n-import { Component, OnInit } from '@angular/core';\n-\n-@Component({\n-  selector: 'app-menu',\n-  templateUrl: './menu.component.html',\n-  styleUrls: ['./menu.component.scss']\n-})\n-export class MenuComponent implements OnInit {\n-\n-  constructor() { }\n-\n-  ngOnInit(): void {\n-  }\n-\n-}\n+<mat-toolbar class=\"menu-toolbar\">\n+    <button\n+      routerLink=\"/home\"\n+      mat-ripple\n+      matRippleColor=\"white\"\n+      class=\"menu-button\"\n+      routerLinkActive=\"active\"\n+      mat-stroked-button\n+    >\n+      Home\n+    </button>\n+    <button\n+      mat-ripple\n+      matRippleColor=\"white\"\n+      class=\"menu-button\"\n+      mat-stroked-button\n+      routerLinkActive=\"active\"\n+      routerLink=\"/game\"\n+    >\n+      Game\n+    </button>\n+  </mat-toolbar>\n"
+                }
+            ],
+            "date": 1651552116908,
+            "name": "Commit-0",
+            "content": "import { Component, OnInit } from '@angular/core';\n\n@Component({\n  selector: 'app-menu',\n  templateUrl: './menu.component.html',\n  styleUrls: ['./menu.component.scss']\n})\nexport class MenuComponent implements OnInit {\n\n  constructor() { }\n\n  ngOnInit(): void {\n  }\n\n}\n"
+        }
+    ]
+}
